@@ -31,6 +31,10 @@
     color: rgba(67, 68, 85, 1);
   }
 
+  input {
+    outline: none;
+  }
+
 
 
 
@@ -544,6 +548,64 @@
     background-color: #31d0aa;
   }
 
-  .icon-foot {
-    fill: #f4f4fd;
+  .foot-form {
+    display: flex;
+  }
+
+  .foot-label {
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-right: 24px;
+    margin-left: 80px;
+  }
+
+  .sub-label {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.32px;
+  }
+
+  .foot-subs .sub-label {
+    letter-spacing: 0.64px;
+  }
+
+  .foot-inp {
+    color: #fff;
+    background-color: rgba(46, 47, 66, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 4px;
+    height: 40px;
+    width: 264px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+  }
+
+  .foot-inp::placeholder {
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.48px;
+  }
+
+  .foot-subs {
+    background-color: rgba(77, 90, 229, 1);
+    color: #fff;
+    padding: 8px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    gap: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .foot-label-two {
+    height: 40px;
+    margin-top: 40px;
   }
