@@ -102,26 +102,44 @@
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
-  .stud-first {
-    color: rgba(64, 75, 191, 1);
-  }
   
-  .stud-first:hover {
+  .studio:hover {
     color: #404bbf ;
   }
   
-  .stud-first:focus {
+  .studio:focus {
     color: #404bbf;
   }
 
-  .stud-first::after {
+  .stud-one:hover:after {
     content: "";
     position: absolute;
     left: 0;
     bottom: -1px;
     height: 4px;
     width: 48px;
+    background-color: #404BBF;
+    border-radius: 2px;
+  }
+
+  .stud-two:hover:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    width: 65px;
+    background-color: #404BBF;
+    border-radius: 2px;
+  }
+
+  .stud-three:hover:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    width: 67px;
     background-color: #404BBF;
     border-radius: 2px;
   }
@@ -480,6 +498,7 @@
   }
   
   .footer {
+    width: 100%;
     background-color: rgba(46, 47, 66, 1);
     padding: 100px 0 100px 0;
   }
