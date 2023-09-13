@@ -111,38 +111,16 @@
     color: #404bbf;
   }
 
-  .stud-one:hover:after {
+  .studio:hover:after {
     content: "";
     position: absolute;
     left: 0;
     bottom: -1px;
     height: 4px;
-    width: 48px;
+    width: 100%;
     background-color: #404BBF;
     border-radius: 2px;
-  }
-
-  .stud-two:hover:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    width: 65px;
-    background-color: #404BBF;
-    border-radius: 2px;
-  }
-
-  .stud-three:hover:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    width: 67px;
-    background-color: #404BBF;
-    border-radius: 2px;
-  }
+}
   
   .address {
     display: flex;
