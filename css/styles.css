@@ -726,7 +726,7 @@
     background-color: transparent;
     padding-left: 38px;
     outline: transparent;
-    border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .true-inp-cont:focus {
@@ -741,7 +741,7 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   }
 
-  .true-inp-cont:focus .human-icon {
+  .true-inp-cont:focus + .modal-icon {
     fill: #4D5AE5;
   }
 
@@ -779,7 +779,7 @@
 
 .label-privacy {
   font-size: 12px;
-  line-height: 1.17px;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
@@ -796,7 +796,7 @@
   fill: transparent;
 }
 
-  input[type="checkbox"]:checked + span {
+  .check-label input[type="checkbox"]:checked + .check-privacy {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
@@ -804,4 +804,21 @@
 
 .privacy-policy {
   color: #4d5ae5;
+}
+
+.modal-send {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: auto;
+  margin-right: auto;
 }
