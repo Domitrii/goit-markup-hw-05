@@ -796,7 +796,7 @@
   fill: transparent;
 }
 
-  .check-label input[type="checkbox"]:checked + .check-privacy {
+  #user-privacy:checked + .check-privacy {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
