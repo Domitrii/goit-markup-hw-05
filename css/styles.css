@@ -436,7 +436,7 @@
   }
 
   .bank-img-p {
-  position: absolute;
+    position: absolute;
   top: 0;
   font-size: 16px;
   line-height: 1.5;
@@ -635,8 +635,17 @@
 
 
 
+  .modal-window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-  .is-open {
+  .modal-absol {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -788,7 +797,7 @@
   fill: transparent;
 }
 
-  .label-privacy:checked + .label-privacy > .check-privacy {
+.checkbox:checked + .label-privacy > .check-privacy {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
@@ -828,7 +837,7 @@
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
- 
+
  .backdrop.is-open {
   opacity: 1;
   visibility: visible;
