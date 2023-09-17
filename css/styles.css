@@ -772,6 +772,7 @@
 
 .comment-ar:focus {
   border-color: #4D5AE5;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .check-label {
