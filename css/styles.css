@@ -805,6 +805,7 @@
 
 .privacy-policy {
   color: #4d5ae5;
+  text-decoration: underline;
 }
 
 .modal-send {
