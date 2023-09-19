@@ -45,6 +45,7 @@
     background-color: #ffffff;
     border-bottom: 1px solid rgba(231, 233, 252, 1) ;
     padding: 24px 0;
+    width: auto;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   }
 
@@ -276,7 +277,7 @@
   .section-three {
     text-align: center;
     background-color: rgba(244, 244, 253, 1);
-
+    min-height: 772px;
   }
 
   .ourteam-htwo {
@@ -306,8 +307,10 @@
 
   .ourteam-ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
     padding: 0;
+
   }
 
   .ourteam-p {
@@ -844,4 +847,5 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  display: block;
  }

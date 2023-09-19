@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
         <nav class="navbar">
             <a class="logo" href="#">Web<span class="logo-s">Studio</span></a>
@@ -383,14 +383,14 @@
     <footer class="footer">
         <div class="container">
             <div class="firstdiv-foot">
-                <a class="logo-footer" href="./index.html">Web<span class="logo-f">Studio</span></a>
+                <a class="logo-footer" href="#header">Web<span class="logo-f">Studio</span></a>
                 <p class="footer-p">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
             </div>
             <div class="foot-cont-two">
                 <p class="soc-med">Social media</p>
                 <ul class="foot-ul">
                     <li class="foot-li">
-                        <a href="" class="a-foot">
+                        <a href="https://www.instagram.com/" target="_blank" class="a-foot">
                             <svg
                             width="24"
                             height="24"
@@ -401,7 +401,7 @@
                         </a>
                     </li>
                     <li class="foot-li">
-                        <a href="" class="a-foot">
+                        <a href="https://twitter.com/" target="_blank" class="a-foot">
                             <svg
                             width="24"
                             height="24"
@@ -412,7 +412,7 @@
                         </a>
                     </li>
                     <li class="foot-li">
-                        <a href="" class="a-foot">
+                        <a href="https://www.facebook.com/" class="a-foot" target="_blank">
                             <svg
                             width="24"
                             height="24"
@@ -423,7 +423,7 @@
                         </a>
                     </li>
                     <li class="foot-li">
-                        <a href="" class="a-foot">
+                        <a href="https://www.linkedin.com/" class="a-foot" target="_blank">
                             <svg
                             class="icon-foot"
                             width="24"
@@ -441,7 +441,7 @@
                     <label class="foot-label">
                         <input type="email" placeholder="E-mail" class="foot-inp" name="inp-foot">
                     </label>
-                        <button type="submit" class="foot-subs">
+                        <button type="submit" class="foot-subs" id="openButton">
                             Subscribe
                             <svg
                                 width="24"
@@ -456,10 +456,9 @@
         </div>
     </footer>
     <!-- Modal -->
-    <div class="backdrop is-open">
-        <div class="modal-window">
+        <div class="backdrop is-open" id="overlay">
             <div class="modal-absol">
-                <button class="modal-but" type="button">
+                <button class="modal-but" type="button" id="closeButton">
                     <svg
                     width="8"
                     height="8"
@@ -474,7 +473,7 @@
                             Name
                         </label>
                         <div class="cont-inp">
-                            <input type="text" id="user-name" name="user-name" class="true-inp-cont">
+                            <input type="text" id="user-name" name="user-name" class="true-inp-cont" required>
                             <svg
                             width="18"
                             height="24"
@@ -488,7 +487,7 @@
                             Phone
                         </label>
                         <div class="cont-inp">
-                            <input type="text" name="user-phone" id="user-phone" class="true-inp-cont">
+                            <input type="text" name="user-phone" id="user-phone" class="true-inp-cont" required>
                             <svg
                             width="18"
                             height="24"
@@ -502,7 +501,7 @@
                             Email
                         </label>
                         <div class="cont-inp">
-                            <input type="text" name="user-email" id="user-email" class="true-inp-cont">
+                            <input type="text" name="user-email" id="user-email" class="true-inp-cont" required>
                             <svg
                             width="18"
                             height="24"
@@ -518,7 +517,7 @@
                         <textarea name="user-comment" id="user-comment" cols="30" rows="10" placeholder="Text input" class="comment-ar"></textarea>
                     </div>
                     <div class="check-label">
-                        <input type="checkbox" name="user-privacy" id="user-privacy" value="true" class="checkbox visually-hidden">
+                        <input type="checkbox" name="user-privacy" id="user-privacy" value="true" class="checkbox visually-hidden" required>
                         <label for="user-privacy" class="label-privacy">
                             <span class="check-privacy">
                                 <svg
@@ -537,6 +536,6 @@
                 </form>
             </div>
         </div>
-    </div>
+        <script src="./js/script.js"></script>
 </body>
 </html>
