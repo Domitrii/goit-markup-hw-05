@@ -456,7 +456,7 @@
         </div>
     </footer>
     <!-- Modal -->
-        <div class="backdrop is-open" id="overlay">
+        <div class="backdrop " id="overlay">
             <div class="modal-absol">
                 <button class="modal-but" type="button" id="closeButton">
                     <svg
@@ -514,7 +514,10 @@
                         <label for="user-comment" class="cont-label">
                             Comment
                         </label>
-                        <textarea name="user-comment" id="user-comment" cols="30" rows="10" placeholder="Text input" class="comment-ar"></textarea>
+                        <div class="text-ar-cont">
+                            <textarea name="user-comment" id="user-comment" cols="30" rows="10" placeholder="Text input" class="comment-ar" maxlength="1000"></textarea>
+                            <div class="char-count">0/1000</div>
+                        </div>
                     </div>
                     <div class="check-label">
                         <input type="checkbox" name="user-privacy" id="user-privacy" value="true" class="checkbox visually-hidden" required>

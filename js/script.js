@@ -13,3 +13,17 @@ document.addEventListener("DOMContentLoaded", function () {
         overlay.classList.remove("is-open")
     });
 });
+
+const textarea = document.querySelector('.comment-ar');
+const charCount = document.querySelector('.char-count');
+
+textarea.addEventListener('input', updateCharCount);
+
+function updateCharCount() {
+    const text = textarea.value; 
+    const textLength = text.length; 
+    const maxLength = parseInt(textarea.getAttribute('maxlength')); 
+    charCount.textContent = `${textLength}/${maxLength}`; 
+  }
+
+  updateCharCount();

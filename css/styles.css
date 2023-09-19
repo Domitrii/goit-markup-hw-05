@@ -775,7 +775,20 @@
 
 .comment-ar:focus {
   border-color: #4D5AE5;
-  color: rgba(46, 47, 66, 0.4);
+  color: rgba(46, 47, 66, 1);
+}
+
+.text-ar-cont {
+  position: relative;
+}
+
+.char-count {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #8e8f99;
+  font-size: 12px;
+  margin: 4px;
 }
 
 .check-label {
