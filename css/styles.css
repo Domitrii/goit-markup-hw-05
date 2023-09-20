@@ -784,8 +784,8 @@
 
 .char-count {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 5px;
+  right: 5px;
   color: #8e8f99;
   font-size: 12px;
   margin: 4px;
