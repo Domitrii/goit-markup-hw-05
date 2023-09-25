@@ -24,6 +24,6 @@ function updateCharCount() {
     const textLength = text.length; 
     const maxLength = parseInt(textarea.getAttribute('maxlength')); 
     charCount.textContent = `${textLength}/${maxLength}`; 
-  }
+}
 
   updateCharCount();
