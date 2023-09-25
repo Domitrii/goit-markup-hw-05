@@ -862,7 +862,3 @@
   pointer-events: auto;
   display: block;
  }
-
- #user-comment:invalid {
-  border: 1px solid red;
- }
